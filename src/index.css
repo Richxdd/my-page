@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home__bg {
+  background-image: url(https://i.imgur.com/LpQNmbO.jpg);
+  background-color: #010101;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+body {
+  font-family: Montserrat, sans-serif;
+}
+.scroll::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #dee2e6;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+  @apply bg-slate-800;
+  height: 10px;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #dee2e6;
+  border-radius: 10px;
+}
