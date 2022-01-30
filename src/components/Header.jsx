@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container  flex justify-between  p-4 ">
         <Link
           to="/"
-          className="text-xs lg:text-xl text-white hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
+          className="text-lg lg:text-xl text-white hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
         >
           Ricardo
         </Link>
@@ -56,25 +56,25 @@ const Header = () => {
           <div className="bg-gray-800 rounded-xl w-3/8 absolute flex gap-3 items-end flex-col lg:flex-row lg:visible  right-0 p-5">
             <Link
               to="/proyectos"
-              className="text-xs lg:text-xl text-white  hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
+              className="text-lg lg:text-xl text-white  hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
             >
               Proyectos
             </Link>
             <Link
               to="/sobremi"
-              className="text-xs lg:text-xl text-white   hover:text-gray-800 font-extrabold hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
+              className="text-lg lg:text-xl text-white   hover:text-gray-800 font-extrabold hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
             >
               Sobre mi
             </Link>
             <Link
               to="/skills"
-              className="text-xs lg:text-xl text-white  hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
+              className="text-lg lg:text-xl text-white  hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
             >
               Skills
             </Link>
             <Link
               to="/contactarme"
-              className="text-xs lg:text-xl text-white    hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
+              className="text-lg lg:text-xl text-white    hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 "
             >
               Contactarme
             </Link>
