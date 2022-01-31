@@ -1,5 +1,12 @@
 import React from 'react'
 import Shop from '../img/shop.png'
+import Mern from '../img/mernstack.png'
+import Landing from '../img/landingpage.png'
+import Citas from '../img/citasreact.png'
+import Gastos from '../img/gastos.png'
+import Criptos from '../img/criptos.png'
+import Crm from '../img/crm.png'
+import Musica from '../img/musica.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper'
 // Import Swiper styles
@@ -8,7 +15,124 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 const Proyectos = () => {
-  const proyectos = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  const proyects = [
+    {
+      id: 1,
+      nombre: 'React Shop',
+      foto: Shop,
+      link: 'https://www.reactshop.xyz/'
+    },
+    {
+      id: 2,
+      nombre: 'Mern stack',
+      foto: Mern,
+      link: 'https://mern-proyect.netlify.app'
+    },
+    {
+      id: 3,
+      nombre: 'Landing Page',
+      foto: Landing,
+      link: 'https://landin-pages.netlify.app/'
+    },
+    {
+      id: 4,
+      nombre: 'Citas React',
+      foto: Citas,
+      link: 'https://citas-react-g.netlify.app/'
+    },
+    {
+      id: 5,
+      nombre: 'Planificador de Gastos',
+      foto: Gastos,
+      link: 'https://plan-gastos.netlify.app/'
+    },
+    {
+      id: 6,
+      nombre: 'Cotizador de Criptomonedas',
+      foto: Criptos,
+      link: 'https://cotizador-criptos.netlify.app/'
+    },
+    {
+      id: 7,
+      nombre: 'Crm Clientes',
+      foto: Crm,
+      link: 'https://crm-cli.netlify.app/clientes'
+    },
+
+    {
+      id: 8,
+      nombre: 'Buscador de Musica',
+      foto: Musica,
+      link: 'https://musica-info.netlify.app/'
+    },
+    {
+      id: 9,
+      nombre: 'React Shop',
+      foto: Shop,
+      link: 'https://www.reactshop.xyz/'
+    }
+  ]
+  const proyects1 = [
+    {
+      id: 1,
+      nombre: 'React Shop',
+      foto: Shop,
+      link: 'https://www.reactshop.xyz/'
+    },
+    {
+      id: 2,
+      nombre: 'Mern stack',
+      foto: Mern,
+      link: 'https://mern-proyect.netlify.app'
+    },
+    {
+      id: 3,
+      nombre: 'Landing Page',
+      foto: Landing,
+      link: 'https://landin-pages.netlify.app/'
+    }
+  ]
+  const proyects2 = [
+    {
+      id: 4,
+      nombre: 'Citas React',
+      foto: Citas,
+      link: 'https://citas-react-g.netlify.app/'
+    },
+    {
+      id: 5,
+      nombre: 'Planificador de Gastos',
+      foto: Gastos,
+      link: 'https://plan-gastos.netlify.app/'
+    },
+    {
+      id: 6,
+      nombre: 'Cotizador de Criptomonedas',
+      foto: Criptos,
+      link: 'https://cotizador-criptos.netlify.app/'
+    }
+  ]
+  const proyects3 = [
+    {
+      id: 7,
+      nombre: 'Crm Clientes',
+      foto: Crm,
+      link: 'https://crm-cli.netlify.app/clientes'
+    },
+
+    {
+      id: 8,
+      nombre: 'Buscador de Musica',
+      foto: Musica,
+      link: 'https://musica-info.netlify.app/'
+    },
+    {
+      id: 9,
+      nombre: 'React Shop',
+      foto: Shop,
+      link: 'https://www.reactshop.xyz/'
+    }
+  ]
 
   return (
     <div className="container">
@@ -17,15 +141,15 @@ const Proyectos = () => {
       </h1>
       <div className="flex justify-center lg:visible invisible lg:w-auto w-0 lg:h-auto h-0">
         <div className="grid lg:grid-cols-3 lg:grid-rows-3 gap-10 justify-center items-center justify-items-center  ">
-          {proyectos.map((proyecto) => (
+          {proyects.map((proyect) => (
             <div className="lg:w-72 lg:h-72 bg-gray-800 opacity-80 rounded-3xl flex flex-col justify-between items-center py-5 text-white font-bold h-0 w-0'">
-              <h2>React Shop</h2>
+              <h2>{proyect.nombre}</h2>
               <img
-                src={Shop}
+                src={proyect.foto}
                 className="w-60 h-32 rounded-xl border-2 border-neutral-500"
               />
 
-              <a href="https://www.reactshop.xyz">https://www.reactshop.xyz/</a>
+              <a href={proyect.link}>{proyect.link}</a>
             </div>
           ))}
         </div>
@@ -41,19 +165,17 @@ const Proyectos = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper">
-          {[1, 2, 3].map((proyecto) => (
+          {proyects1.map((proyect) => (
             <SwiperSlide>
               <div className=" flex justify-center">
                 <div className="w-60 h-60 bg-gray-800 opacity-80 rounded-3xl flex flex-col justify-between items-center py-5 text-white font-bold">
-                  <h2>React Shop</h2>
+                  <h2>{proyect.nombre}</h2>
                   <img
-                    src={Shop}
+                    src={proyect.foto}
                     className="w-48 h-24 rounded-xl border-2 border-neutral-500"
                   />
 
-                  <a href="https://www.reactshop.xyz">
-                    https://www.reactshop.xyz/
-                  </a>
+                  <a href={proyect.link}>{proyect.link}</a>
                 </div>
               </div>
             </SwiperSlide>
@@ -71,19 +193,17 @@ const Proyectos = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper">
-          {[1, 2, 3].map((proyecto) => (
+          {proyects2.map((proyect) => (
             <SwiperSlide>
               <div className=" flex justify-center">
                 <div className="w-60 h-60 bg-gray-800 opacity-80 rounded-3xl flex flex-col justify-between items-center py-5 text-white font-bold">
-                  <h2>React Shop</h2>
+                  <h2>{proyect.nombre}</h2>
                   <img
-                    src={Shop}
+                    src={proyect.foto}
                     className="w-48 h-24 rounded-xl border-2 border-neutral-500"
                   />
 
-                  <a href="https://www.reactshop.xyz">
-                    https://www.reactshop.xyz/
-                  </a>
+                  <a href={proyect.link}>{proyect.link}</a>
                 </div>
               </div>
             </SwiperSlide>
@@ -101,19 +221,17 @@ const Proyectos = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper">
-          {[1, 2, 3].map((proyecto) => (
+          {proyects3.map((proyect) => (
             <SwiperSlide>
               <div className=" flex justify-center">
                 <div className="w-60 h-60 bg-gray-800 opacity-80 rounded-3xl flex flex-col justify-between items-center py-5 text-white font-bold">
-                  <h2>React Shop</h2>
+                  <h2>{proyect.nombre}</h2>
                   <img
-                    src={Shop}
+                    src={proyect.foto}
                     className="w-48 h-24 rounded-xl border-2 border-neutral-500"
                   />
 
-                  <a href="https://www.reactshop.xyz">
-                    https://www.reactshop.xyz/
-                  </a>
+                  <a href={proyect.link}>{proyect.link}</a>
                 </div>
               </div>
             </SwiperSlide>
