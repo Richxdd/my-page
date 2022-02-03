@@ -30,7 +30,7 @@ const Header = () => {
               className="hover:scale-125 text-xs lg:text-xl text-white  md:w-28 lg:w-auto hover:text-gray-800 font-extrabold hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 ">
               Sobre mi
             </Link>
-            <Link
+            {/* <Link
               to="/skills"
               className=" hover:scale-125 text-xs lg:text-xl text-white md:w-28 lg:w-auto hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 ">
               Skills
@@ -39,7 +39,7 @@ const Header = () => {
               to="/contactarme"
               className=" hover:scale-125 text-xs lg:text-xl text-white  md:w-28 lg:w-auto  hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 ">
               Contactarme
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="lg:invisible lg:h-0 lg:w-0">
@@ -63,7 +63,7 @@ const Header = () => {
               className=" hover:scale-125 text-lg lg:text-xl text-white   hover:text-gray-800 font-extrabold hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 ">
               Sobre mi
             </Link>
-            <Link
+            {/* <Link
               to="/skills"
               className="hover:scale-125 text-lg lg:text-xl text-white  hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 ">
               Skills
@@ -72,7 +72,7 @@ const Header = () => {
               to="/contactarme"
               className="hover:scale-125 text-lg lg:text-xl text-white    hover:text-gray-800 font-extrabold  hover:bg-white rounded-full py-1 px-3 text-center ease-in duration-300 ">
               Contactarme
-            </Link>
+            </Link> */}
           </div>
         </div>
       ) : null}
